@@ -1,0 +1,6 @@
+/.clwb/
+/bazel-bin/
+/bazel-out/
+/bazel-testlogs/
+/bazel-university/
+.gitignore
