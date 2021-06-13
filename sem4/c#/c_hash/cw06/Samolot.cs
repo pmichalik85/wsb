@@ -1,9 +1,10 @@
 using System;
+using System.Collections.Generic;
 using System.Runtime.Remoting;
 
 namespace cw06
 {
-    public class Samolot: Pojazd
+    public class Samolot: Pojazd, INaprawialny
     {
         private double gpsL { get; set; }
         private double gpsW { get; set; }
@@ -15,6 +16,16 @@ namespace cw06
             this.gpsL = gpsL;
             this.gpsW = gpsW;
             this.pojemnoscLukuCargo = pojemnoscLukuCargo;
+        }
+
+        public void Napraw()
+        {
+            Console.WriteLine("Samolot {0} naprawiony.", Id);
+        }
+
+        public override void Przemieszczaj()
+        {
+            Console.WriteLine("Samolot {0} leci.", Id);
         }
 
         public string SOS(string id)

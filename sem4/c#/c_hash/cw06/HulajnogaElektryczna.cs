@@ -2,7 +2,7 @@ using System;
 
 namespace cw06
 {
-    public class HulajnogaElektryczna : Pojazd
+    public class HulajnogaElektryczna : Pojazd, INaprawialny
     {
         public enum Rozmiar
         {
@@ -18,6 +18,16 @@ namespace cw06
         {
             this.trackingId = trackingId;
             this.rozmiar = rozmiar;
+        }
+
+        public void Napraw()
+        {
+            Console.WriteLine("Hulajnoga elektryczna {0} naprawiona.", Id);
+        }
+        
+        public override void Przemieszczaj()
+        {
+            Console.WriteLine("Hulajnoga {0} jedzie.", Id);
         }
         
         public string NiskiStanBaterii()

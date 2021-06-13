@@ -14,11 +14,13 @@ namespace cw06
             Console.WriteLine("Max {0}", w.Max());*/
             Samolot s = new Samolot("KRK12345","UBER", Pojazd.Typ.Powietrzny, Pojazd.Naped.Mechaniczny, 2000, 1000, 1000, 80.100, 15.12, 80);
             HulajnogaElektryczna h = new HulajnogaElektryczna("12312AKL098","UBER", Pojazd.Typ.Naziemy, Pojazd.Naped.Elektryczny, 50, 30, 1, "12345ABCD", HulajnogaElektryczna.Rozmiar.XL);
-            Pojazd.wiadomosc += new Pojazd.Komunikat(h.Loguj);
-            s.ObsłuzZdarzenie(s.SOS("IXP12345"));
+            Pojazd.wiadomosc += new Samolot.Komunikat(s.Wyslij);
             h.ObsłuzZdarzenie(h.NiskiStanBaterii());
-            Console.WriteLine(Pojazd.LogKomunikatów[Pojazd.LogKomunikatów.Count - 1]);
-            Console.WriteLine(Pojazd.LogKomunikatów.Count);
+            s.ObsłuzZdarzenie(s.SOS("IXP12345"));
+            h.Napraw();
+            s.Napraw();
+            h.Przemieszczaj();
+            s.Przemieszczaj();
         }
     }
 };
