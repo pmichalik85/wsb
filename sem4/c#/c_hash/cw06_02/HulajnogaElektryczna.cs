@@ -1,6 +1,6 @@
 using System;
 
-namespace cw06
+namespace cw06_02
 {
     public class HulajnogaElektryczna : Pojazd, INaprawialny
     {

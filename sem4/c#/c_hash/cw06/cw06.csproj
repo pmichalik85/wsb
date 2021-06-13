@@ -38,13 +38,9 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="HulajnogaElektryczna.cs" />
-        <Compile Include="INaprawialny.cs" />
         <Compile Include="IStatystyka.cs" />
-        <Compile Include="Pojazd.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
-        <Compile Include="Samolot.cs" />
         <Compile Include="Wektor.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace cw06
+namespace cw06_02
 {
     public abstract class Pojazd
 

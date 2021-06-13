@@ -1,4 +1,4 @@
-namespace cw06
+namespace cw06_02
 {
     public interface INaprawialny
     {

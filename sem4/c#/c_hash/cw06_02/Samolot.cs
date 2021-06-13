@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.Remoting;
 
-namespace cw06
+namespace cw06_02
 {
     public class Samolot: Pojazd, INaprawialny
     {
